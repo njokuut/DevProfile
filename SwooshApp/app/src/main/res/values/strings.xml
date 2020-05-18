@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SwooshApp</string>
+    <string name="desired_league">Desired League:</string>
+    <string name="next">NEXT</string>
+    <string name="todo">TODO</string>
+    <string name="mens">Mens</string>
+    <string name="womens">Womens</string>
+    <string name="co_ed">Co-Ed</string>
+    <string name="finish">FINISH</string>
+    <string name="beginner">Beginner</string>
+    <string name="baller">Baller</string>
 </resources>

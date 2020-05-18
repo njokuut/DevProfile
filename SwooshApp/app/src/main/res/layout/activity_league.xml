@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -29,7 +30,8 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/todo"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/montserrat"
-        android:text="Desired League:"
+        android:text="@string/desired_league"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16sp"
@@ -53,7 +55,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="NEXT"
+        android:onClick="nextBtnClicked"
+        android:text="@string/next"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -75,44 +78,47 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/menLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="Mens"
+            android:onClick="onMensClick"
+            android:text="@string/mens"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textOff="Mens"
-            android:textOn="Mens"
+            android:textOff="@string/mens"
+            android:textOn="@string/mens"
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/womenLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="Womens"
+            android:onClick="onWomenClick"
+            android:text="@string/womens"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
-            android:textOff="Womens"
-            android:textOn="Womens"
+            android:textOff="@string/womens"
+            android:textOn="@string/womens"
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/coedLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="Co-Ed"
+            android:onClick="onCoEdClick"
+            android:text="@string/co_ed"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
-            android:textOff="Co-Ed"
-            android:textOn="Co-Ed"
+            android:textOff="@string/co_ed"
+            android:textOn="@string/co_ed"
             android:textStyle="bold" />
     </LinearLayout>
 
