@@ -1,8 +1,8 @@
-package com.enjaybaze.swooshapp
+package com.enjaybaze.swooshapp.Controllers
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.enjaybaze.swooshapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".Controllers.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -30,11 +30,15 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinishClick"
         android:text="@string/finish"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beginnerToggleBtn"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ToggleButton
         android:id="@+id/beginnerToggleBtn"
@@ -47,6 +51,7 @@
         android:layout_marginRight="24dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="onBeginnerClick"
         android:text="@string/beginner"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -67,6 +72,7 @@
         android:layout_marginRight="24dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="onBallerClick"
         android:text="@string/baller"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
